@@ -1,7 +1,9 @@
 # bert-classification-sample
 BERTを用いた日本語の二項分類学習・推論を行うサンプル
 ## Requirements
-python == `3.11.10` にて動作確認しています。そのほかの Python パッケージは `pip` からインストールしてください。
+* python == `3.11.10`
+* DGX H100 にて検証
+* そのほかの Python パッケージは `pip` からインストールしてください。
 ```bash
 $ git clone git@github.com:masamokkulu/bert-classification-sample.git && cd bert-classification-sample
 $ pip install -r requirements.txt
