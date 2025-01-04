@@ -63,6 +63,15 @@ def compute_metrics(eval_pred) -> dict:
     balanced_acc = balanced_accuracy_score(labels, predicts)
     return {"accuracy": acc, "balanced_accuracy": balanced_acc, "f1": f1, "precision": precision, "recall": recall}
 
+# ディレクトリ確認
+if not os.path.exists(TRAIN_LOG_OUTPUT):
+     os.makedirs(TRAIN_LOG_OUTPUT)
+     print(f"[INFO] Created {TRAIN_LOG_OUTPUT} directory.")
+
+if not os.path.exists(MODEL_OUTPUT):
+     os.makedirs(MODEL_OUTPUT)
+     print(f"[INFO] Created {MODEL_OUTPUT} directory.")
+
 print("[INFO] Loading dataset ...")
 train_dataset = load_dataset(
     DATASET_PATH,
