@@ -44,3 +44,16 @@ REVIEW: 購入して一週間で壊れてしまった。一応交換はしても
 INFERENCE: negative
 SCORE: 0.9787
 ```
+## Web UI
+参考程度にウェブから UI を起動し、推論を実行することが可能です。Flask == `3.1.0` を使用しています(`pip install ...` で自動的に導入されているはずです)。  
+`app.py` を起動してください。その後、記載のアドレス・ポートでアクセスできるはずです。
+```bash
+$ python app.py
+ * Serving Flask app 'app'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://xxx.xxx.xxx.xxx:8000
+...
+```
